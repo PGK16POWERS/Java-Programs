@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 public class MinOrMax21 {
     public static void main(String[] args) {
+        
         // CREATE AN ARRAY
         int[] speedOfVehicles = {45, 62, 78, 80, 69, 72, 58, 67, 74};
 
