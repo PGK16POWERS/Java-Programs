@@ -1,12 +1,12 @@
 package UserCreation;
 import java.util.Scanner;
 
-class userProfile {
+class UserProfile {
     
     private String name;
     private String email;
 
-    public userProfile(String name, String email) {
+    public UserProfile(String name, String email) {
         this.name = name;
         this.email = email;
     }
@@ -23,6 +23,17 @@ public class UserSchema {
         Scanner s = new Scanner(System.in);
 
         // Get users name
-        
+        System.out.println("Enter your name: ");
+        String name = s.nextLine();
+
+        // Get users email
+        System.out.println("Enter your Email: ");
+        String email = s.nextLine();
+
+        UserProfile user = new UserProfile(name, email);
+
+        user.displayProfile();
+
+        s.close();
     }
 }
